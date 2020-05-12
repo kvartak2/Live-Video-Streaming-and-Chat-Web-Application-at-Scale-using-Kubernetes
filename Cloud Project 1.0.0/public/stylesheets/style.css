@@ -1,0 +1,162 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+div_two {
+  position: fixed;
+  
+  top: 40%;
+  
+}
+
+header {
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0px;
+}
+
+div#change_username, section#input_zone {
+  border: 3px outset #8258FA;
+}
+
+div#change_username {
+  height: 3%;
+  display: inline-block;
+  background-color: #BCA9F5;
+}
+
+section#chatroom {
+  border: inset #8258FA;
+  height: 280px;
+  width: 55%;
+  margin: 0px;
+}
+
+section#input_zone {
+  height: fit-content;
+  width: 55%;
+  text-align: center;
+  padding: inherit;
+  background-color: #BCA9F5;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input#username {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+input#message {
+  display: inline-block;
+  width: 80%;
+  height: 70%;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2vh;
+}
+
+button#send_message {
+  display: inline-block;
+  height: 70%;
+  width: 55px;
+}
+
+p.message {
+  margin: 0px;
+  width: 100%;
+  height: 40px;
+  font-size: 2vh;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 1vh;
+}
+
+.message:nth-child(even) {
+  background-color: #81DAF5;
+}
+
+.message:nth-child(odd) {
+  background-color: #81BEF7;
+}
+.div_two {
+  display: contents;
+}
+
+a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+table, tr, td, th {margin: 0;border: 0;padding: 5px;border-collapse: collapse;}
+
+li {
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #888;
+    padding: 5px 5px 5px 5px;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}
+
+.localStream {
+  display: inline-block;
+  top: 15px;
+  right: 15px;
+  float: right;
+}
+
+.localStream video {
+    border: 5px solid rgb(119, 119, 119);
+    outline: 0px none;
+    height: 240px;
+    width: 320px;
+}
+
+.remoteStreams{
+  display: inline-block;
+  bottom: 55px;
+  right: 15px;
+  float: left;
+  text-align: center;
+}
+
+.remoteStreams td:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}
+
+.remoteStreams .selected {
+  background-color: #444 !important;
+  text-shadow:none;
+  border-right-color: #aaa;
+  border-left: none;
+  border-radius: 3px 3px 3px 3px; 
+  box-shadow:inset 1px 2px 6px #070707;
+}
+
+.footer {
+   clear: both;
+}
